@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .parent {
+        margin: 50px auto;
+        width: 1000px;
+        height: 250px;
+        background-color:whitesmoke;
+        position: relative;
+        border: 7px solid black;
+        border-radius: 9px 10px 20px 40px;
+      }
+
+      .innerl {
+        width: 100px;
+        height: 100px;
+        background-color: #424949;
+        border-radius: 60px;
+        position: absolute;
+        bottom: -25%;
+        color: #e5e7e9;
+        font-size: 65px;
+        right: 90%;
+        transform: translateX(50%);
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 1px 0 #c7c7c7;
+      }
+      i {
+        margin-left: 16px;
+      }
+
+      .innerr {
+        color: #e5e7e9;
+        font-size: 65px;
+        width: 100px;
+        height: 100px;
+        background-color: #424949;
+        border-radius: 60px;
+        position: absolute;
+        bottom: -25%;
+        left: 70%;
+        transform: translateX(50%);
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 1px 0 #c7c7c7;
+      }
+      .window {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: whitesmoke;
+      }
+      .window > div {
+        background-color: whitesmoke;
+        width: 100px;
+        margin: 10px;
+        height: 90px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 60px;
+        overflow: hidden;
+        color: #2e4053;
+        box-shadow: inset 0 0 25px 0 #c7c7c7;
+        overflow: hidden;
+      }
+      .fuel {
+        height: 35px;
+        width: 35px;
+        top: 50%;
+        left: 79%;
+        color: black;
+        font-size: 20px;
+        position: absolute;
+      }
+      .handle {
+        left: 07%;
+        
+        color: black;
+        font-size: 20px;
+        position: absolute;
+      }
+      i:hover {
+        color: red;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="window">
+        <i
+          class="fa-solid fa-paint-roller fa-rotate-90"
+          style="
+            margin-left: -9px;
+            top: 40%;
+            font-size: 40px;
+            position: absolute;
+          "
+        ></i>
+        <div style="border-radius: 85px 0px 0px 0px">
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -65px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -97px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -20px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -20px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -20px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -20px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -20px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+        <div>
+          <i
+            class="fa-solid fa-wheelchair fa-flip-horizontal"
+            style="
+              margin-top: 40px;
+              margin-bottom: -20px;
+              margin-right: -55px;
+              padding: 5px;
+            "
+          ></i>
+        </div>
+      </div>
+      <div class="handle">
+        <i class="fa-solid fa-gauge-simple fa-rotate-270"></i>
+      </div>
+      <div class="fuel"><i class="fa-solid fa-gas-pump"></i></div>
+      <div class="innerl">
+        <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
+      </div>
+      <div class="innerr">
+        <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
+      </div>
+    </div>
+    <hr style="border:10px solid black">
+  </body>
+</html>
